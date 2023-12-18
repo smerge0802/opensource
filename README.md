@@ -1,15 +1,30 @@
  # Voice Spoof Detection
-The feature extraction model we propose is as follows: By utilizing the intermediate layer of the codec model Encodec, we represent speech as positive integer values. The preprocessed speech is then used as the input for BERT to extract features from the speech.![1](https://github.com/smerge0802/opensource/assets/149349542/e2a94413-316b-4049-af36-d4f7c6383182)
+The feature extraction model we propose is as follows: By utilizing the intermediate layer of the codec model Encodec, we represent speech as positive integer values. The preprocessed speech is then used as the input for BERT to extract features from the speech.
+
+
+![1](https://github.com/smerge0802/opensource/assets/149349542/e2a94413-316b-4049-af36-d4f7c6383182)
 
 
 
-We conducted experiments using the proposed feature extraction model as follows. Utilizing each layer and leveraging the input values from each layer, we carried out various experiments.![2](https://github.com/smerge0802/opensource/assets/149349542/4983306d-ad95-4e89-88cd-7705aee6b2f1)
+We conducted experiments using the proposed feature extraction model as follows. Utilizing each layer and leveraging the input values from each layer, we carried out various experiments.
+
+
+![2](https://github.com/smerge0802/opensource/assets/149349542/4983306d-ad95-4e89-88cd-7705aee6b2f1)
 
 
 
-The experimental results are as follows:![3](https://github.com/smerge0802/opensource/assets/149349542/4e77cef9-ed54-43d9-b752-9b798840a0ff)
+The experimental results are as follows:
 
 
+![3](https://github.com/smerge0802/opensource/assets/149349542/4e77cef9-ed54-43d9-b752-9b798840a0ff)
+
+## The open-source tools and APIs used.
+### model
+- <https://huggingface.co/docs/transformers/model_doc/bert>
+- <https://huggingface.co/docs/transformers/model_doc/encodec>
+
+### dataset
+- <https://huggingface.co/datasets/LanceaKing/asvspoof2019>
 
 ## The experimental environment is as follows
 
